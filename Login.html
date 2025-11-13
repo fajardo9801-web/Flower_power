@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Flower Power</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Momo Trust Display", cursive;
+      background: linear-gradient(135deg, rgb(255, 192, 203), rgb(255, 192, 203));
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: rgba(212, 110, 190, 0.757);
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      animation: fadeIn 0.6s ease;
+    }
+
+    h1 {
+      color: rgb(202, 20, 162);
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    input:focus {
+      border: 2px solid #fff;
+      outline: none;
+      box-shadow: 0 0 3px rgba(42,93,132,0.4);
+    }
+
+    button {
+      width: 100%;
+      background-color: rgb(202, 20, 162);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: "Momo Trust Display", cursive;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: rgb(180, 10, 140);
+    }
+
+    .footer-text {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .footer-text a {
+      color: white;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: scale(0.95);}
+      to {opacity: 1; transform: scale(1);}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h1>Sign In</h1>
+    <form action="login.php" method="POST">
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <button type="submit" name="login">Sign In</button>
+    </form>
+
+    <p class="footer-text">
+      Don’t have an account? <a href="FORMS.html">Sign Up here</a>
+    </p>
+  </div>
+</body>
+</html>
+

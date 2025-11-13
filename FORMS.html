@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: rgb(255, 192, 203);
+        font-family: "Momo Trust Display", cursive;
+    }
+    h1 {
+        font-family: "Momo Trust Display", cursive;
+        color: rgb(202, 20, 162);
+    }
+
+    table {
+        margin: 50px auto;
+        border-color: rgb(202, 20, 162);
+        border-collapse: collapse;
+        width: 50%;
+    }
+    td {
+        padding: 10px;
+    }
+    input[type="text"], 
+    input[type="password"], 
+    input[type="tel"], 
+    input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+    input[type="submit"] {
+        font-size: 20px;
+        padding: 10px 20px;
+        background-color: rgb(221, 24, 165);
+        color: white;
+        border-color: rgb(243, 7, 172);
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: rgb(241, 121, 201);
+    }
+    .center-text {
+        text-align: center;
+    }
+    input {
+        font-family: "Momo Trust Display", cursive;
+    }
+    p {
+        font-family: "Momo Trust Display", cursive;
+        color: rgba(215, 21, 176, 0.645);
+    }
+</style>
+</head>
+<body>
+    <div class="center-text">
+        <h1>Become a member</h1>
+    </div>
+
+    <form action="ENTRY.php" method="POST">
+        <table border="1">
+            <tr>
+                <td><label for="first_name">First Name</label></td>
+                <td><input type="text" id="first_name" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="last_name">Last Name</label></td>
+                <td><input type="text" id="last_name" name="last_name1" required></td>
+            </tr>
+            <tr> 
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>  
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center-text">
+                    <input type="submit" name="save" value="Submit">        
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center-text">
+                    <p>
+                        By clicking the registration button, you agree to our 
+                        <br>
+                        <a href="Terms.html">Terms and Conditions</a> and 
+                        <a href="Privacy.html">Privacy Policy</a>.
+                    </p>
+                    <p>
+                        Already have an account? <a href="Login.html">Login Here</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
